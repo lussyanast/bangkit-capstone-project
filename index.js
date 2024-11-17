@@ -2,7 +2,7 @@
 const Hapi = require("@hapi/hapi");
 
 // Import definisi rute dari file routes.js
-const routes = require("./routes");
+//const routes = require("./routes");
 
 // Fungsi async untuk menginisialisasi server
 const init = async () => {
