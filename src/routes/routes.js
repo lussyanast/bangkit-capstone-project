@@ -1,7 +1,6 @@
 // (Import fungsi-fungsi handler dari file handlers) (Work in progress)
 const { signin, signup, signout } = require("../handlers/authHandler");
 
-
 const routes = (server, myModels) => {
 	server.route({
 		method: "POST",
@@ -29,9 +28,6 @@ const routes = (server, myModels) => {
 			auth: "session",
 		},
 	});
-
-
-
 };
 
 module.exports = routes;
