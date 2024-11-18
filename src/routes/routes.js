@@ -1,5 +1,5 @@
 // (Import fungsi-fungsi handler dari file handlers) (Work in progress)
-const { signin, signup, signout } = require("../handlers/authHandler"); 
+const { signin, signup, signout } = require("../handlers/authHandler");
 
 
 const routes = (server, myModels) => {
