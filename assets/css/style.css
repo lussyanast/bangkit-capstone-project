@@ -1,0 +1,435 @@
+/* Import Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar-brand,
+.nav-item {
+  color: white !important;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.bgcolor {
+  background-color: transparent;
+}
+
+nav.sticky {
+  /* padding: 10px 100px; */
+  background-color: #4caf50;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  background-color: #4caf50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.jumbotron a {
+  background-color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* Info Panel Styles */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -50px;
+  background-color: white;
+  padding: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.info-panel h4 {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn-hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover-scale :hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/*  AboutSection Styles */
+.about {
+  margin-top: 100px;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.about p {
+  font-size: 18px;
+  margin: 20px;
+  text-align: justify;
+}
+
+.about h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* portofolio styles */
+.portofolio {
+  margin-top: 60px;
+}
+
+.portofolio img {
+  border-radius: 10px;
+}
+
+.portofolio h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.portofolio p {
+  font-size: 14px;
+  margin: 20px;
+  text-align: justify;
+}
+
+/* Styles Tim */
+.team h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.team-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  padding-top: 75%;
+}
+
+.card-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .card-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #666;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+}
+
+.social-icon:hover {
+  color: #0d6efd;
+  background-color: #e9ecef;
+  transform: translateY(-3px);
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: -20px;
+}
+
+.carousel-control-next {
+  right: -20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .team-card {
+    margin: 10px 5px;
+  }
+}
+
+/* Smooth Transitions */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Card Content Spacing */
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #e63946;
+  color: white;
+  padding: 2rem 0;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+  font-size: 26px;
+}
+
+footer a {
+  color: #d28137;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #e5533b;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(16, 53, 100, 0),
+    rgba(16, 53, 100, 0.75),
+    rgba(16, 53, 100, 0)
+  );
+  margin: 3rem 0;
+}
+
+.section-title {
+  margin-top: 2rem;
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  will-change: opacity, transform;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #E63946;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #E63946;
+  opacity: 0.5;
+}
+
+.section-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-item {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-item {
+    text-transform: uppercase;
+    margin-right: 30px;
+    transition: background 0.3s;
+  }
+
+  .nav-item:hover {
+    background: white;
+    border-radius: 8px;
+  }
+
+  nav.sticky {
+    padding: 10px 100px;
+    background-color: #4caf50;
+  }
+
+  .jumbotron {
+    height: 35em;
+    padding-top: 100px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 60px;
+  }
+
+  .about {
+    text-align: left;
+    padding: 70px 100px;
+  }
+
+  .info-panel {
+    max-width: 400px;
+    padding: 40px;
+    margin-top: -30px;
+  }
+
+  .jasa {
+    padding: 80px 0;
+  }
+
+  .jasa-card .card-img-top {
+    height: 220px;
+  }
+}
