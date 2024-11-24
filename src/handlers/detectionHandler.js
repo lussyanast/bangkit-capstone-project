@@ -6,9 +6,20 @@ const detectDiseaseHandler = async (request, h) => {
         const { file } = payload;
 
         if (!file) {
+            console.error("No file uploaded!");
             return h.response({ status: "fail", message: "No file uploaded" }).code(400);
         }
 
+        console.log("File received:", file.hapi);
+
+        // Validasi tipe file
+        const allowedTypes = ["image/png", "image/jpeg"];
+        if (!allowedTypes.includes(file.hapi.headers["content-type"])) {
+            console.error("Unsupported file type:", file.hapi.headers["content-type"]);
+            return h.response({ status: "fail", message: "Unsupported file type" }).code(415);
+        }
+
+        // Prediksi penyakit
         const result = await detectionService.predictDisease(file);
         return h.response({
             status: "success",
@@ -18,7 +29,7 @@ const detectDiseaseHandler = async (request, h) => {
             },
         }).code(200);
     } catch (error) {
-        console.error(error);
+        console.error("Error in handler:", error.message);
         return h.response({
             status: "error",
             message: "Something went wrong while detecting disease",

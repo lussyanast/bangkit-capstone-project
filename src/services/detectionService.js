@@ -8,7 +8,7 @@ let model;
 // Fungsi untuk memuat model
 const loadModel = async () => {
     if (!model) {
-        console.log("Loading model...");
+        console.log("Loading model from:", modelPath);
         model = await tf.loadLayersModel(`file://${modelPath}`);
         console.log("Model loaded successfully.");
     }
@@ -20,13 +20,23 @@ const predictDisease = async (file) => {
     try {
         const model = await loadModel();
 
-        // Membaca file gambar
-        const buffer = await file._data;
+        // Membaca buffer file
+        const buffer = await file.read();
+        if (!buffer) {
+            console.error("Buffer is empty!");
+            throw new Error("Failed to read file buffer");
+        }
+        console.log("Buffer size:", buffer.length);
+
+        // Mengonversi buffer menjadi tensor
         const imageTensor = tf.node.decodeImage(buffer).resizeBilinear([224, 224]).expandDims(0);
+        console.log("Image tensor shape:", imageTensor.shape);
 
         // Melakukan prediksi
         const prediction = model.predict(imageTensor);
         const scores = prediction.dataSync();
+        console.log("Prediction scores:", scores);
+
         const maxIndex = scores.indexOf(Math.max(...scores));
 
         // Label penyakit (harus sesuai dengan pelatihan model Anda)
@@ -36,7 +46,7 @@ const predictDisease = async (file) => {
             confidence: Math.max(...scores).toFixed(2),
         };
     } catch (error) {
-        console.error("Error during prediction:", error);
+        console.error("Error during prediction:", error.message);
         throw error;
     }
 };
