@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "070ba36b-95ac-4a63-bf4f-48853f3b0ddd",
+		"name": "TomaTech API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31277394"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/detect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"file\": \"your-content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/detect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"detect"
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
