@@ -1,13 +1,13 @@
-const Hapi = require("@hapi/hapi");
-const routes = require("./routes/detectionRoutes");
+const Hapi = require('@hapi/hapi');
+const routes = require('./routes/detectionRoutes');
 
 const init = async () => {
     const server = Hapi.server({
         port: 3000,
-        host: "localhost",
+        host: 'localhost',
         routes: {
             cors: {
-                origin: ["*"], // Izinkan CORS
+                origin: ['*'], // Izinkan CORS
             },
         },
     });
@@ -16,10 +16,10 @@ const init = async () => {
     server.route(routes);
 
     await server.start();
-    console.log("Server running on %s", server.info.uri);
+    console.log('Server running on %s', server.info.uri);
 };
 
-process.on("unhandledRejection", (err) => {
+process.on('unhandledRejection', (err) => {
     console.error(err);
     process.exit(1);
 });
