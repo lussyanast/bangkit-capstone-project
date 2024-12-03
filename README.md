@@ -17,3 +17,15 @@ TomaTech: Your Smart Companion for Tomato Detection
 * (CC) C009B4KY3737 – Reinhad Tangguh Ariyanto – Universitas Gunadarma
 * (MD) A009B4KY3556 – Rachmat Iqbal – Universitas Gunadarma
 
+## Features
+
+## Documentation
+### Project Plan
+### User Research
+### Design Thinking
+### Mindmap
+### Prototype
+### Prerequisites
+### Dataset
+### Project Brief
+### Presentation
