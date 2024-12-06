@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img align="center" src="assets\img\Logo.png"  width="500"></img>
+  <img align="center" src="www/assets/img/Logo.png"  width="500"></img>
 <br>
 TomaTech: Your Smart Companion for Tomato Detection
 </h1>
