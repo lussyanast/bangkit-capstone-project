@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 const tf = require("@tensorflow/tfjs-node");
 const path = require("path");
 
@@ -6,8 +7,8 @@ let model;
 
 const loadModel = async () => {
   if (!model) {
-    console.log("Loading model from:", modelPath);
-    model = await tf.loadLayersModel(`file://${modelPath}`);
+    console.log("Loading model from:", process.env.MODEL_URL); 
+    model = await tf.loadLayersModel(process.env.MODEL_URL); 
     console.log("Model loaded successfully.");
   }
   return model;
