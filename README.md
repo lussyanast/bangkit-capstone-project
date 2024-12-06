@@ -4,6 +4,10 @@
 TomaTech: Your Smart Companion for Tomato Detection
 </h1>
 
+# Description
+
+TomaTech is a mobile app that enables farmers and gardeners to detect tomato diseases confidently. Utilizing advanced machine learning, it provides real-time analysis and actionable solutions to enhance crop quality and yield. With an intuitive design, TomaTech fosters collaboration and integrates traditional farming with modern agri-tech, helping users increase productivity and reduce losses.
+
 # Team Profile
 
 ### Team ID : C242-PS470
