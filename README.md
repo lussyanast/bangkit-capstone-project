@@ -65,3 +65,5 @@ _Prediksi Penyakit_
    npm install
 2. Jalankan server dengan perintah:
    npm start
+3. Gunakan Postman untuk mengirimkan foto untuk diprediksi ke server
+4. Sesuaikan URL seperti pada Endpoint di atas
