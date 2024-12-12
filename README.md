@@ -25,10 +25,10 @@ The dataset used in this project is a collection of tomato leaves images divided
 The application only uses 1 models. It contains about 10000 training image datasets and 1000 validation image datasets. The training is carried out for about 40 - 60 minutes to complete each model consisting of 100 epochs.
 
 ## Model Architecture
-![](model_summary.png)
+![](images/model_summary.png)
 
 ## Model Confusion Matrix
-![](Conf_Matrix.png)
+![](images/Conf_Matrix.png)
 The confusion matrix shows that the model performs well overall, with most classes having high accuracy.
 
 ## Result
