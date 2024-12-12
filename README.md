@@ -1,6 +1,5 @@
-
 ## Overview
-This project is a simple example of using Convolutional Neural Network (CNN) in TensorFlow to classify tomato disease images on leaves. This model is designed to extract features from images using CNN, then use the CNN output to classify the tomato disease.
+This project is using Convolutional Neural Network (CNN) in TensorFlow to classify tomato disease images on leaves. This model is designed to extract features from images using CNN, then use the CNN output to classify the tomato disease.
 
 ## Requirements
 - Tensorflow
