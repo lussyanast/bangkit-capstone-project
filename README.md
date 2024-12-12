@@ -27,7 +27,7 @@ The application only uses 1 models. It contains about 10000 training image datas
 ## Model Architecture
 ![](model_summary.png)
 
-## Model Connfusion Matrix
+## Model Confusion Matrix
 ![](Conf_Matrix.png)
 The confusion matrix shows that the model performs well overall, with most classes having high accuracy.
 
