@@ -38,7 +38,7 @@ TomaTech is a mobile app that enables farmers and gardeners to detect tomato dis
 ### Project Brief
 https://docs.google.com/document/d/1iZZ3eFuubIC2wzdlf6LxrGttAMvkbR43FRHZe0QCXIw
 ### Presentation
-https://www.canva.com/design/DAGXkJ1c0YU/ebTAfglr0yarFSSS8GK34w
+https://www.canva.com/design/DAGXkJ1c0YU/ebTAfglr0yarFSSS8GK34w/edit?utm_content=DAGXkJ1c0YU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ### Demo Video
 https://drive.google.com/file/d/10yZjfBM02QvtgnYn107LlSw1Do4yDpu0/view?usp=sharing
 ### Promotional Website
