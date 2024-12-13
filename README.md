@@ -21,8 +21,6 @@ TomaTech is a mobile app that enables farmers and gardeners to detect tomato dis
 * (CC) C009B4KY3737 – Reinhad Tangguh Ariyanto – Universitas Gunadarma
 * (MD) A009B4KY3556 – Rachmat Iqbal – Universitas Gunadarma
 
-## Features
-
 ## Documentation
 ### Project Plan
 * https://docs.google.com/document/d/1hPTnYXF3hstkBHR0NClCLTpbWS0QCYBcNaDPCX_wVXU/edit?usp=sharing
@@ -34,9 +32,12 @@ TomaTech is a mobile app that enables farmers and gardeners to detect tomato dis
 * https://www.figma.com/board/OQIyGuw3XFmDA3jhIKbiBv/BANGKIT-2024---Mindmap-%26-Database-Design-%22TomaTech%22?node-id=0-1&t=0IAVxwJZU2jUIX6d-1
 ### Prototype
 * https://www.figma.com/design/ZXQA87NTjR6M1Vht0d7oaE/TomaTech-Prototype?t=IHEWyOBa1OMDAPtp-1
-### Prerequisites
 ### Dataset
 * https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf
 * https://drive.google.com/file/d/1nh65v8Igr_xYv0SREPyDs6V1R2ejhaMx/view?usp=drive_link
 ### Project Brief
+https://docs.google.com/document/d/1iZZ3eFuubIC2wzdlf6LxrGttAMvkbR43FRHZe0QCXIw
 ### Presentation
+https://www.canva.com/design/DAGXkJ1c0YU/ebTAfglr0yarFSSS8GK34w
+### Demo Video
+https://drive.google.com/file/d/10yZjfBM02QvtgnYn107LlSw1Do4yDpu0/view?usp=sharing
